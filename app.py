@@ -33,9 +33,6 @@ def receive_message():
                 elif _message == "HELLO" or _message == "HI" or _message == "HEY":
                     response_sent_text = "Hello there"
                     send_message(recipient_id, response_sent_text)
-                elif _message == "420" or _message == "4:20" or _message == "It's 4:20":
-                    response_sent_text = "Blaze it"
-                    send_message(recipient_id, response_sent_text)
                 elif _message == "WHAT IS THE ANSWER TO LIFE, THE UNIVERSE AND EVERYTHING?":
                     response_sent_text = "42"
                     send_message(recipient_id, response_sent_text)
