@@ -42,8 +42,6 @@ def receive_message():
                 elif _message == "TEST":
                     response_sent_text = "Test complete, I'm working!"
                     send_message(recipient_id, response_sent_text)
-
-
                 elif message['message'].get('text'):
                     response_sent_text = get_message()
                     send_message(recipient_id, response_sent_text)
