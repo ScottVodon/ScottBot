@@ -28,16 +28,13 @@ def receive_message():
                 recipient_id = message['sender']['id']
                 _message = message['message']['text'].upper()
                 if _message == "I LOVE YOU":
-                    response_sent_text = "I love you too"
+                    response_sent_text = "Scottbot loves you too"
                     send_message(recipient_id, response_sent_text)
                 elif _message == "HELLO" or _message == "HI" or _message == "HEY":
                     response_sent_text = "Hello there"
                     send_message(recipient_id, response_sent_text)
                 elif _message == "WHAT IS THE ANSWER TO LIFE, THE UNIVERSE AND EVERYTHING?":
                     response_sent_text = "42"
-                    send_message(recipient_id, response_sent_text)
-                elif _message == "I MISS YOU":
-                    response_sent_text = "I miss you too, so does real Scott"
                     send_message(recipient_id, response_sent_text)
                 elif _message == "TEST":
                     response_sent_text = "Test complete, I'm working!"
